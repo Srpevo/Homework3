@@ -4,6 +4,16 @@ internal class Arr
 {
     private int[] arr = new int[100];
 
+     public Arr(int Size)
+     {
+         arr = new int[Size];
+     }
+
+     public Arr()
+     {
+    
+     }
+    
     public void SetElements()
     {
         for (int Index = 0; Index < arr.Length; Index++)

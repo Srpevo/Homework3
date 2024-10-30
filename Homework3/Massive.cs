@@ -14,14 +14,25 @@ internal class Arr
     
      }
     
-    public void SetElements()
-    {
-        for (int Index = 0; Index < arr.Length; Index++)
-        {
-            arr[Index] = Int32.Parse(Console.ReadLine());
-        }
-        return;
-    }
+      public void SetElements()
+      {
+          Console.WriteLine("Enter [q] for exit.");
+          for (int index = 0; index < arr.Length; index++)
+          {
+              string input = Console.ReadLine();
+              if (input.ToLower() == "q") break;
+    
+              if (Int32.TryParse(input, out int value))
+              {
+                  arr[index] = value; 
+              }
+              else
+              {
+                  Console.WriteLine("Try Again.");
+                  index--;
+              }
+          }
+      }
 
     public void FillArray()
     {

@@ -20,7 +20,7 @@ Console.WriteLine();
 Numbering.PrintWithColor(3, Colors.Green);
 Console.WriteLine();
 
-Arr TestArray = new Arr(); //seting arr size
+Arr TestArray = new Arr(); //setting arr size
 //TestArray.SetElements(); //manual filling
 TestArray.FillArray(); //you can use quick fill
 TestArray.PrintElements(); //using class function for print elements

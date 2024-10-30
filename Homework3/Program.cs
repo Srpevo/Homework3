@@ -21,7 +21,7 @@ Numbering.PrintWithColor(3, Colors.Green);
 Console.WriteLine();
 
 Arr TestArray = new Arr(); //if necessary, set the dimension of the array, by default it is 100
-//TestArray.SetElements(); //manual filling
+//TestArray.SetElements(); //manual filling, enter "q" to exit
 TestArray.FillArray(); //you can use quick fill
 TestArray.PrintElements(); //using class function for print elements
 

@@ -16,7 +16,7 @@ internal class Arr
     
       public void SetElements()
       {
-          Console.WriteLine("Enter [q] for exit.");
+          Console.WriteLine("Enter q to exit");
           for (int index = 0; index < arr.Length; index++)
           {
               string input = Console.ReadLine();
